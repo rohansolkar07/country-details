@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  height: 5rem;
+  /* background-color: black; */
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#mode {
+  width:8rem;
+  height: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mode span:hover{
+  font-weight: 700;
+}
+.box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.country_container{
+  width: 100%;
+  margin: 100px 10px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  /* justify-content: space-between; */
+}
+
+.search_box {
+  width: 80%;
+  height: 2rem;
+  margin-top: 2rem;
+}
+
+.search_box input{
+  width: 40%;
+  height: 4rem;
+  border-radius: 30px;
+  font-size: 2rem;
+  text-align :center;
+}
+
+.cardb{
+  border-radius: 20px;
+  width: 20%;
+  overflow: hidden;
+  height: 400px;
+  border: 2px black solid;
+}
+
+.cardw{
+  border-radius: 20px;
+  width: 20%;
+  overflow: hidden;
+  height: 400px;
+  border: 2px white solid;
+}
+
+.card:hover{
+  transform: scale(1.03);
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+}
+
+.info{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.card img{
+  width: 100%;
+  height: 200px;
+}
+
+.card h2{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact{
+  position: absolute;
+  z-index: 999;
+  margin: 40px;
+}
+
+.contHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+  font-size: 5rem;
+}
+
+.mainCount{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.countContainer{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border: 2px solid;
+  box-shadow:2px purple;
+  width: 50%;
+  margin: 0px 2px 0px 2px;
+}
+
+.img1{
+  width: 500px;
+
+}
+
+.backButton {
+  width: 100px;
+  height: 50px;
+  background-color: beige;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5)
+}
+
+.shimmer-card{
+  background-color: rgb(244, 237, 237);
+  border: none;
+}
+
+.mode-dark{
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mode-light{
+  background-color: white;
+  color: black;
 }
